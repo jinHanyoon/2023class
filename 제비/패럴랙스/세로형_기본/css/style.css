@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** base **/
+html,
+body{
+	height:100%;	
+	overflow-y:hidden;
+}
+body{
+	position:relative;
+	min-width:1200px;
+	font-family:"Dotum", "Arial", sans-serif;	
+	font-size:12px;
+	color:#333;
+}
+
+
+
+.posNum{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:300px;
+	height:50px;
+	margin:-25px 0 0 -150px;
+	background:#111;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:50px;
+	z-index:9999;
+}
+
+
+/** gnb **/
+.gnb{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background:#000;
+	z-index:999;
+}
+.gnb h1{
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	margin-bottom:10px;
+}
+
+.gnb h1 a{
+	color:#fff;	
+}
+
+.gnb .innerGnb{
+	width:800px;
+	margin:0 auto;
+}
+.gnb .innerGnb li{
+	float:left;	
+	width:20%;
+}
+.gnb .innerGnb li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+	background:#222;
+	border-left:solid 1px #000;
+}
+.gnb .innerGnb .on a{
+	background:#555;
+}
+
+/** navi **/
+.navi{
+	position:absolute;
+	right:20px;
+	top:50%;
+	z-index:10;	
+	width:100px;
+}
+.navi ul li{
+	margin-top:1px;
+}
+.navi ul li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#444;
+	color:#fff;	
+}
+.navi ul .on a{
+	background:#111;
+}
+.navi p{
+	background:#666;
+	margin-top:6px;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+}
+.navi p a{
+	color:#fff;
+}
+
+
+/** scrollBox **/
+.scrollBox{
+	min-width:1200px;
+	height:100%;
+	position:relative;
+}
+
+.scrollBox .wrap{
+	min-width:1200px;
+	position:relative;
+	overflow:hidden;	
+}
+
+.scrollBox .wrap > div{
+	height:1000px;
+	position:relative;
+	
+}
+
+.scrollBox .wrap .objs > li{
+	position:absolute;
+	left:50%;	/* 브라우저 창의 크기에 따라 반응을 해야 해서 가운데 기준을 잡는다 */
+}
+
+
+
+
+
+/** Scene01 **/
+#scene01{
+	padding-top:70px;/* 메뉴 높이값만큼 여백 넣기 */
+	background:orange;
+}
+#scene01 .objs .obj01{
+	width:300px;
+	height:300px;
+	top:200px;
+	margin-left:-400px;/* left값을 50%로 적용했기 때문에 마진값으로 위치를 조절한다 */
+	background:#F03;
+}
+#scene01 .objs .obj02{
+	width:400px;
+	height:200px;
+	top:400px;
+	margin-left:300px;
+	background:#393;
+}
+#scene01 .objs .obj03{
+	width:200px;
+	height:200px;
+	top:600px;
+	margin-left:-500px;
+	background:#0C6;
+}
+
+
+
+/** Scene02 **/
+#scene02{
+	height:1200px;
+	background:skyblue;
+}
+#scene02 .objs .obj01{
+	width:150px;
+	height:150px;
+	top:300px;
+	margin-left:-700px;/* left값을 50%로 적용했기 때문에 마진값으로 위치를 조절한다 */
+	background:#6C6;
+}
+#scene02 .objs .obj02{
+	width:200px;
+	height:300px;
+	top:600px;
+	margin-left:600px;
+	background:#F36;
+}
+
+/** Scene03 **/
+#scene03{
+	height:1400px;
+	background:green;
+}
+
+/** Scene04 **/
+#scene04{
+	height:1600px;
+	background:violet;
+}
+
+/** Scene05 **/
+#scene05{
+	background:gray;
+}
+
+/** footer **/
+.footer{
+	height:50px;
+	background:#333;	
+}
+
+
+
+
+

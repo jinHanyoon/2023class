@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** base **/
+html,
+body{
+	height:100%;	
+	overflow-y:hidden;
+}
+body{
+	position:relative;
+	min-width:1200px;
+	font-family:"Dotum", "Arial", sans-serif;	
+	font-size:12px;
+	color:#333;
+}
+
+
+
+.posNum{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:300px;
+	height:50px;
+	margin:-25px 0 0 -150px;
+	background:#111;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:50px;
+	z-index:9999;
+}
+
+
+/** gnb **/
+.gnb{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background:#000;
+	z-index:999;
+}
+.gnb h1{
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	margin-bottom:10px;
+}
+
+.gnb h1 a{
+	color:#fff;	
+}
+
+.gnb .innerGnb{
+	width:800px;
+	margin:0 auto;
+}
+.gnb .innerGnb li{
+	float:left;	
+	width:20%;
+}
+.gnb .innerGnb li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+	background:#222;
+	border-left:solid 1px #000;
+}
+.gnb .innerGnb .on a{
+	background:#555;
+}
+
+
+/** scrollBox **/
+.scrollBox{
+	min-width:1200px;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+.scrollBox .wrap{
+	width:10000px;/* 컨텐츠 박스 5개 X 2000(가로사이즈) */
+	height:100%;
+	position:relative;
+	 overflow:hidden; 
+}
+
+.scrollBox .wrap > div{
+	width:2000px;
+	height:100%;
+	float:left;
+	position:relative;
+	
+}
+
+.scrollBox .wrap .objs > li{
+	position:absolute;
+}
+
+
+
+
+
+/** Scene01 **/
+#scene01{
+	background:orange;
+}
+#scene01 .objs .obj01{
+	width:300px;
+	height:300px;
+	left:200px;
+	top:300px;
+	background:#F03;
+}
+#scene01 .objs .obj02{
+	width:400px;
+	height:200px;
+	top:400px;
+	left:1000px;
+	background:#393;
+}
+
+
+/** Scene02 **/
+#scene02{
+	background:skyblue;
+}
+#scene02 .objs .obj01{
+	width:150px;
+	height:150px;
+	top:300px;
+	left:300px;
+	background:#6C6;
+}
+#scene02 .objs .obj02{
+	width:200px;
+	height:300px;
+	top:600px;
+	left:1000px;
+	background:#F36;
+}
+
+/** Scene03 **/
+#scene03{
+	background:green;
+}
+
+/** Scene04 **/
+#scene04{
+	background:violet;
+}
+
+/** Scene05 **/
+#scene05{
+	background:gray;
+}
+
+/** footer **/
+.footer{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:10;
+	height:50px;
+	background:#333;	
+}
+
+
+
+
+
